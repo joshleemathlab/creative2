@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+
+      @media only screen and (max-width: 768px) {
+          /* For mobile phones: */
+          [class*="col-"] {
+              width: 100%;
+          }
+      }
+    </style>
+    <title> Creative Project 2 </title>
+    <!--<script>
+      var openWeatherAppID = '59c55959ab6c0e43bda4bf8e417fcb5a', openWeatherUrl = 'http://api.openweathermap.org/data/2.5/forecast'
+      
+      var prepareData = function(units){
+        var cityName = $('#city-name').val()
+        if (cutyName && cityName != ''){
+          cityNAme = cityName.trim()
+          getData(openWeatherUrl,cityName,openWeatherAppID,units)
+        }
+        else{
+          alert('Please enter the city name')
+        }
+      }
+
+      function getData(url, cityName, appID, units){
+        var request = $.ajax({
+          url: url,
+          dataType: "jsonp",
+          data:{q: cityNAme, appid: appId, units:units},
+          jsonCallback: "fetchData",
+          type: "GET"
+        })
+      }
+      function fetchData(forecast){
+        
+      }
+      $(document).ready(function(){
+        $('.btn-metric').click(function(){
+          prepareData('metric')
+        })
+        $('.btn-metric').click(function(){
+          prepareData('imperial')
+        })
+      })
+    </script>-->
+</head>
+
+
+<body>
+  <div class="top-container">
+    <h1>Creative Project 2</h1>
+  </div>
+      
+  <!--MENUBAR-->
+  <div class="header" id="myHeader">
+        <ul class="menu">
+        <li class="menu"><a href="index.html" class="menu">Home</a></li>
+        <!--<li class="menu"><a href="stack.html" class="menu">Stack Overflow</a></li>-->
+        <li class="menu"><a href="About.html" class="menu">About</a></li>
+        </ul>
+  </div>
+    
+  <div class="top-container2">
+    <h1>Recipe Search</h1>
+  </div>
+  <!--CONTENT FOR RECIPE-->
+<div class="content">
+          <form>
+        <label>Enter a food</label><br/>
+        <input id="recipeInput" type"text"></input><br/>
+        <input id="recipeSubmit" type="submit" value="Search Recipe!"></input>
+      </form>
+    <p id="recipeResults"></p>
+
+</div>
+
+
+  <!--FOOTER-->
+  <div class="footer">
+          <p style="text-align: right">JOSH LEE || <a href="https://github.com/joshleemathlab/creative2" target="_blank">My GitHub URL</a></p></footer>
+  </div>
+
+
+  <!--SCRIPTS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script text="type/javascript" src="script.js"></script>
+  <!--STICKY HEADER-->
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

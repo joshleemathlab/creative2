@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+    </style>
+    <title> CP 2 - About </title>
+</head>
+
+
+<body>
+  <div class="top-container">
+    <h1>About</h1>
+  </div>
+      
+  <!--MENUBAR-->
+  <div class="header" id="myHeader">
+        <ul class="menu">
+        <li class="menu"><a href="index.html" class="menu">Home</a></li>
+        <!--<li class="menu"><a href="stack.html" class="menu">Stack Overflow</a></li>-->
+        <li class="menu"><a href="About.html" class="menu">About</a></li>
+        </ul>
+  </div>
+
+  <!--CONTENT-->
+<div class="row">
+  <div class="column left">
+    <h2>Creative Project 2</h2>
+    <p>This is my creative project 2. It pulls from Yummly's API. On the right is just a copy-paste of my about-me from my portfolio just so I can add some text!</p>
+  </div>
+  <div class="column right">
+        <h2>About</h2>
+       <p>My name is Joshua J. Lee. I was born in Sandy, UT, on January 1st, 1995. When I was 2 years old, our family moved to Korea, where I went to school at an international school. I grew up learning Korean at home and English naturally at school, and between ages 12 and 18, I took classes and learned Spanish. After graduating in 2013 from the same international school, I attended two semesters at Brigham Young University as a pre-business major.</p>
+       <p>In my second semester at BYU, I received an ecclesiastical service call, otherwise known as a mission call to members of the LDS church, to Concepcion, Chile, specifically serving in the "Chile Concepcion South Mission". I lived at and served as an LDS missionary from September, 2014, to June, 2016. Returning to BYU, I decided to study computer engineering because my older brother had graduated in that field. After taking engineering classes, I decided to switch to computer science, as the subjects intrigued me more. </p>
+       <hr>
+       <p>Growing up, I always had an intrigue and passion for photography. My dad picked up photography as a young man, and passed his knowledge onto me as well as buying me a camera before I went to South Africa for a school trip in 2009. After discovering that I had a talent in photography, I dabbled in it in the following years and tinkered with videography.</p>
+       <p>It wasn't until late 2016 when I realized that two of my greatest passions in this world were photography and videography. Having left my older cameras in Korea before moving to the States in 2013, I only had a recently purchased GoPro Hero 5 Black, which I used to make videos whenever I went out on adventures with my friends. Having made videos of several hikes and time on the snow, I decided in the summer of 2017 to take my talents a step further. I purchased a Canon 80D and started taking photos and videos as a job.</p>
+       <p>Just starting out, I was fortunate enough to have friends who were getting married at that time have me be the videographer for their weddings, which gave me a lot of experience and learning at several LDS temples, including the Salt Lake City, Sacramento, and Washington D.C. temples. I had friends who loved having their pictures taken, and I started an instagram account with the content I generated from these activities.</p>
+       <p>The busier I get in school, the more I realize how stress relieving photography and videography are. I hope to continue in these hobbies and talents as I get hired more and more for weddings, product shoots, and travel/marketing endeavours. Some of my content is showcased in the <a href="portfolio.html">portfolio</a> tab, but all my content can be viewed at my <a href="https://www.instagram.com/cameraofjosh">instagram</a> and <a href="https://www.vimeo.com/cameraofjosh">vimeo</a> accounts.</p>
+  </div>
+</div>
+
+  <!--FOOTER-->
+  <div class="footer">
+          <p style="text-align: right">JOSH LEE || <a href="https://github.com/joshleemathlab/theshop" target="_blank">My GitHub URL</a></p></footer>
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script text="type/javascript" src="/script.js"></script>
+  <!--STICKY HEADER-->
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>
